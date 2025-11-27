@@ -1,5 +1,4 @@
 "use client"; // <--- THIS LINE IS CRITICAL FOR USING useState AND EVENT HANDLERS
-import '../styles/globals.css'
 import React, { useState, useCallback } from 'react';
 
 // === Type Definitions (CRITICAL for .tsx files) ===
