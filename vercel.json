@@ -1,8 +1,22 @@
 {
+  "version": 2,
+  "builds": [
+    {
+      "src": "aiotac-frontend/package.json",
+      "use": "@vercel/next",
+      "config": {
+        "rootDirs": "aiotac-frontend"
+      }
+    }
+  ],
   "routes": [
     {
+      "src": "/_next/static/(.*)",
+      "dest": "/_next/static/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/aiotac-frontend/$1"
     }
   ]
 }
