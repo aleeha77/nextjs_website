@@ -5,7 +5,6 @@
       "src": "aiotac-frontend/package.json",
       "use": "@vercel/next",
       "config": {
-        // CRITICAL FIX 1: This tells the Next.js builder where the project's root files (like app/) are.
         "rootDir": "aiotac-frontend" 
       }
     }
